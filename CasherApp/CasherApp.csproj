@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5DEC9631-E8EB-485B-98B1-A9023A7BCF65}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CasherApp</RootNamespace>
+    <AssemblyName>CasherApp</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.35\lib\net461\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v20.1" />
+    <Reference Include="DevExpress.Data.v20.1" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1" />
+    <Reference Include="DevExpress.Utils.v20.1" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core" />
+    <Reference Include="DevExpress.XtraEditors.v20.1" />
+    <Reference Include="DevExpress.Printing.v20.1.Core" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\Cmd_Category.cs" />
+    <Compile Include="Controller\Cmd_ItemCard.cs" />
+    <Compile Include="Controller\Cmd_SaleDetail.cs" />
+    <Compile Include="Controller\Cmd_SaleMaster.cs" />
+    <Compile Include="Controller\Cmd_UnitCard.cs" />
+    <Compile Include="Controller\Cmd_UserEvents.cs" />
+    <Compile Include="Controller\Cmd_Users.cs" />
+    <Compile Include="Factory\DataConnection.cs" />
+    <Compile Include="Factory\IRepository.cs" />
+    <Compile Include="Factory\Repository.cs" />
+    <Compile Include="HelperClass.cs" />
+    <Compile Include="Model\CLS_Category.cs" />
+    <Compile Include="Model\CLS_ItemCard.cs" />
+    <Compile Include="Model\CLS_SaleDetail.cs" />
+    <Compile Include="Model\CLS_SaleMaster.cs" />
+    <Compile Include="Model\CLS_UnitCard.cs" />
+    <Compile Include="Model\CLS_UserEvents.cs" />
+    <Compile Include="Model\CLS_Users.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StoredProcegers\SP_Category.cs" />
+    <Compile Include="UserInfo.cs" />
+    <Compile Include="View\Codes\FRM_Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Codes\FRM_Code.Designer.cs">
+      <DependentUpon>FRM_Code.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Items\Frm_AddItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Items\Frm_AddItems.Designer.cs">
+      <DependentUpon>Frm_AddItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Items\FRM_EditItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Items\FRM_EditItem.Designer.cs">
+      <DependentUpon>FRM_EditItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Items\FRM_ItemCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Items\FRM_ItemCard.Designer.cs">
+      <DependentUpon>FRM_ItemCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Main\Frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Main\Frm_Main.Designer.cs">
+      <DependentUpon>Frm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sales\FRM_Sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Sales\FRM_Sales.Designer.cs">
+      <DependentUpon>FRM_Sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ServerConfig\FRM_ServerConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ServerConfig\FRM_ServerConfig.Designer.cs">
+      <DependentUpon>FRM_ServerConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\FRM_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UserControl\FRM_Login.Designer.cs">
+      <DependentUpon>FRM_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\FRM_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UserControl\FRM_User.Designer.cs">
+      <DependentUpon>FRM_User.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\Codes\FRM_Code.resx">
+      <DependentUpon>FRM_Code.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Items\Frm_AddItems.resx">
+      <DependentUpon>Frm_AddItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Items\FRM_EditItem.resx">
+      <DependentUpon>FRM_EditItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Items\FRM_ItemCard.resx">
+      <DependentUpon>FRM_ItemCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Main\Frm_Main.resx">
+      <DependentUpon>Frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Sales\FRM_Sales.resx">
+      <DependentUpon>FRM_Sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ServerConfig\FRM_ServerConfig.resx">
+      <DependentUpon>FRM_ServerConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserControl\FRM_Login.resx">
+      <DependentUpon>FRM_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserControl\FRM_User.resx">
+      <DependentUpon>FRM_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\CasherApp.Model.CLS_Category.datasource" />
+    <None Include="Properties\DataSources\CasherApp.Model.CLS_ItemCard.datasource" />
+    <None Include="Properties\DataSources\CasherApp.Model.CLS_SaleDetail.datasource" />
+    <None Include="Properties\DataSources\CasherApp.Model.CLS_UnitCard.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Report\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

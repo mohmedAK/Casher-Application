@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CasherApp.Model.CLS_Category" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\CLS_Category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CasherApp.Model.CLS_ItemCard" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAQAAAAAAoAAgAAQAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\CLS_ItemCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CasherApp.Model.CLS_SaleDetail" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQQAAAAAAIAAgAASAgAAAQAAAACAAAAAAAAA=</HashCode>
+      <FileName>Model\CLS_SaleDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CasherApp.Model.CLS_SaleMaster" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAQAAAAAAAAAAAAACACAAAAAAAAQAAAAAAAAg=</HashCode>
+      <FileName>Model\CLS_SaleMaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CasherApp.Model.CLS_UnitCard" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAEAAAAAAA=</HashCode>
+      <FileName>Model\CLS_UnitCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CasherApp.Model.CLS_UserEvents" Collapsed="true">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAACAAAQAAAAAAAAAAAAAAAAIAAAAAAAQAAAAFAAAA=</HashCode>
+      <FileName>Model\CLS_UserEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CasherApp.Model.CLS_Users" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAQAAAAIAAAA=</HashCode>
+      <FileName>Model\CLS_Users.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CasherApp.Factory.DataConnection" Collapsed="true">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Factory\DataConnection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CasherApp.Factory.Repository&lt;T&gt;" Collapsed="true">
+    <Position X="2" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACABAAAAAAAAAAAACgAAABAAAgA=</HashCode>
+      <FileName>Factory\Repository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CasherApp.Controller.Cmd_Category" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAgAAQAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Controller\Cmd_Category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CasherApp.Controller.Cmd_ItemCard" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAQAAAAAAAAAAgAAAAAAgAAAAAAAACA=</HashCode>
+      <FileName>Controller\Cmd_ItemCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CasherApp.Controller.Cmd_SaleDetail" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAIAAABAAQAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Controller\Cmd_SaleDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CasherApp.Controller.Cmd_SaleMaster" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAACQAAAAAAAABQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controller\Cmd_SaleMaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CasherApp.Controller.Cmd_UnitCard" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAQABAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controller\Cmd_UnitCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CasherApp.Controller.Cmd_UserEvents" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controller\Cmd_UserEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CasherApp.Controller.Cmd_Users">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAQAAAAAAAEAAAgAAAAAAAEAAAAAAgA=</HashCode>
+      <FileName>Controller\Cmd_Users.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="CasherApp.Factory.IRepository&lt;T&gt;" Collapsed="true">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAACgAAABAAAgA=</HashCode>
+      <FileName>Factory\IRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
